@@ -86,3 +86,13 @@ table tr td{
 .download span {
 	margin-right: 5px;
 }
+
+.filecol .fileimage svg {
+	width: 100% !important;
+	height: 150px;
+}
+
+.filecol .card {	
+    margin-top:15px;
+	margin-bottom: 10px;
+}
