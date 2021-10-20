@@ -75,7 +75,7 @@ $qry = $conn->query("SELECT * FROM files where id=".$_GET['id']);
 			        var reader = new FileReader();
 			        reader.onload = function (e) {
             			_this.siblings('label').html(input.files[0]['name'])
-			            
+			            $('#submit').removeAttr("disabled");
 			        }
 
 			        reader.readAsDataURL(input.files[0]);

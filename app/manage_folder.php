@@ -15,7 +15,7 @@ $qry = $conn->query("SELECT * FROM folders where id=".$_GET['id']);
 		<input type="hidden" name="parent_id" value="<?php echo isset($_GET['fid']) ? $_GET['fid'] :'' ?>">
 		<div class="form-group">
 			<label for="name" class="control-label">Folder Name</label>
-			<input type="text" name="name" id="name" value="<?php echo isset($meta['name']) ? $meta['name'] :'' ?>" class="form-control">
+			<input type="text" name="name" id="name" value="<?php echo isset($meta['name']) ? $meta['name'] :'' ?>" class="form-control" required onkeypress="myFunction(this.value)">
 		</div>
 		<div class="form-group" id="msg"></div>
 
@@ -47,5 +47,11 @@ $qry = $conn->query("SELECT * FROM folders where id=".$_GET['id']);
 			}
 		})
 		})
+
 	})
+	function myFunction(val){
+			if(val != null){
+				$('#submit').removeAttr("disabled");
+			}
+		}
 </script>
