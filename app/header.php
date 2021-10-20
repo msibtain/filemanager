@@ -86,7 +86,7 @@
           <ul class="nav navbar-nav pull-right">
             <li><a class="fullscreen-btn"><i class="fa fa-arrows-alt"></i></a></li>
             <!-- start language menu -->
-            <li class="dropdown language-switch">
+            <!-- <li class="dropdown language-switch">
               <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <img
                   src="../assets/img/flags/gb.png" class="position-left" alt=""> English <span
                   class="fa fa-angle-down"></span>
@@ -109,8 +109,6 @@
                 </li>
               </ul>
             </li>
-            <!-- end language menu -->
-            <!-- start notification dropdown -->
             <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
               <a class="dropdown-toggle" data-bs-toggle="dropdown" data-hover="dropdown"
                 data-close-others="true">
@@ -183,8 +181,6 @@
                 </li>
               </ul>
             </li>
-            <!-- end notification dropdown -->
-            <!-- start message dropdown -->
             <li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
               <a class="dropdown-toggle" data-bs-toggle="dropdown" data-hover="dropdown"
                 data-close-others="true">
@@ -265,7 +261,7 @@
                   </div>
                 </li>
               </ul>
-            </li>
+            </li> -->
             <!-- end message dropdown -->
             <!-- start manage user dropdown -->
             <li class="dropdown dropdown-user">
@@ -276,7 +272,7 @@
                 <i class="fa fa-angle-down"></i>
               </a>
               <ul class="dropdown-menu dropdown-menu-default">
-                <li>
+                <!-- <li>
                   <a href="user_profile.html">
                     <i class="icon-user"></i> Profile </a>
                 </li>
@@ -295,9 +291,9 @@
                   <a href="lock_screen.html">
                     <i class="icon-lock"></i> Lock
                   </a>
-                </li>
+                </li> -->
                 <li>
-                  <a href="login.html">
+                  <a href="logout.php">
                     <i class="icon-logout"></i> Log Out </a>
                 </li>
               </ul>
@@ -395,4 +391,3 @@
     <!-- end color quick setting -->
     <!-- start page container -->
     <div class="page-container">
-        <br><br>

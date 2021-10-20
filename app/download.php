@@ -1,4 +1,7 @@
-<?php 
+<?php
+session_start();
+if(!isset($_SESSION['login_id']))
+    header('location:login.php');
 include 'db_connect.php';
 $qry = $conn->query("SELECT * FROM files where id=".$_GET['id'])->fetch_array();
 

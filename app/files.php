@@ -156,7 +156,53 @@ div b{
 					<?php endwhile; ?>
 				</div>
 				<hr>
+
 				<div class="row">
+                    <?php
+                    $s = 1;
+                    while($row=$files->fetch_assoc()):
+						$name = explode(' ||',$row['name']);
+						$name = isset($name[1]) ? $name[0] ." (".$name[1].").".$row['file_type'] : $name[0] .".".$row['file_type'];
+
+						$img_arr = array('png','jpg','jpeg','gif','psd','tif');
+						$doc_arr =array('doc','docx');
+						$pdf_arr =array('pdf','ps','eps','prn');
+						$icon ='fa-file';
+						if(in_array(strtolower($row['file_type']),$img_arr))
+							$icon ='fa-image';
+						if(in_array(strtolower($row['file_type']),$doc_arr))
+							$icon ='fa-file-word';
+						if(in_array(strtolower($row['file_type']),$pdf_arr))
+							$icon ='fa-file-pdf';
+						if(in_array(strtolower($row['file_type']),['xlsx','xls','xlsm','xlsb','xltm','xlt','xla','xlr']))
+							$icon ='fa-file-excel';
+						if(in_array(strtolower($row['file_type']),['zip','rar','tar']))
+							$icon ='fa-file-archive';
+
+					?>
+                            <div class="col-lg-2 filecol <?php echo $s; ?>">
+                                <div class="card col-md-12">
+                    <div class="card-body">
+                        <span class="fileimage"><i class="fa fa-3x <?php echo $icon ?>"></i></span> 
+                        </div>
+                </div>
+                                <large>
+                                    <?php echo $name ?></large>
+                                <br>
+                                <a href="javascript:void(0)" class="custom-menu-list file-option download" data-id = '<?php echo $row['id'] ?>'><span><i class="fa fa-download"></i> </span>Download</a>
+                                </div>
+                                <?php 
+                                
+                                if ($s % 6 == 0)
+                                {
+                                    echo '</div><div class="row">';
+                                }
+                                $s++;
+                                endwhile; ?>
+                            
+                </div>
+
+				<div class="row" style="display: none;">
 					<div class="card col-md-12">
 						<div class="card-body">
 							<table width="100%">

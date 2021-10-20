@@ -2,12 +2,7 @@
       <div class="chat-sidebar-container" data-close-on-body-click="false">
         <div class="chat-sidebar">
           <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a href="#quick_sidebar_tab_1" class="nav-link active tab-icon" data-bs-toggle="tab"> <i
-                  class="material-icons">chat</i>Chat
-                <span class="badge badge-danger">4</span>
-              </a>
-            </li>
+            
             <li class="nav-item">
               <a href="#quick_sidebar_tab_3" class="nav-link tab-icon" data-bs-toggle="tab"> <i
                   class="material-icons">settings</i>
@@ -16,124 +11,9 @@
             </li>
           </ul>
           <div class="tab-content">
-            <!-- Start Doctor Chat -->
-            <div class="tab-pane active chat-sidebar-chat in active show" role="tabpanel"
-              id="quick_sidebar_tab_1">
-              <div class="chat-sidebar-list">
-                <div class="chat-sidebar-chat-users slimscroll-style" data-rail-color="#ddd"
-                  data-wrapper-class="chat-sidebar-list">
-                  <div class="chat-header">
-                    <h5 class="list-heading">Online</h5>
-                  </div>
-                  <ul class="media-list list-items">
-                    <li class="media"><img class="media-object" src="../assets/img/prof/prof3.jpg"
-                        width="35" height="35" alt="...">
-                      <i class="online dot"></i>
-                      <div class="media-body">
-                        <h5 class="media-heading">John Deo</h5>
-                        <div class="media-heading-sub">Spine Surgeon</div>
-                      </div>
-                    </li>
-                    <li class="media">
-                      <div class="media-status">
-                        <span class="badge badge-success">5</span>
-                      </div> <img class="media-object" src="../assets/img/prof/prof1.jpg"
-                        width="35" height="35" alt="...">
-                      <i class="busy dot"></i>
-                      <div class="media-body">
-                        <h5 class="media-heading">Rajesh</h5>
-                        <div class="media-heading-sub">Director</div>
-                      </div>
-                    </li>
-                    <li class="media"><img class="media-object" src="../assets/img/prof/prof5.jpg"
-                        width="35" height="35" alt="...">
-                      <i class="away dot"></i>
-                      <div class="media-body">
-                        <h5 class="media-heading">Jacob Ryan</h5>
-                        <div class="media-heading-sub">Ortho Surgeon</div>
-                      </div>
-                    </li>
-                    <li class="media">
-                      <div class="media-status">
-                        <span class="badge badge-danger">8</span>
-                      </div> <img class="media-object" src="../assets/img/prof/prof4.jpg"
-                        width="35" height="35" alt="...">
-                      <i class="online dot"></i>
-                      <div class="media-body">
-                        <h5 class="media-heading">Kehn Anderson</h5>
-                        <div class="media-heading-sub">CEO</div>
-                      </div>
-                    </li>
-                    <li class="media"><img class="media-object" src="../assets/img/prof/prof2.jpg"
-                        width="35" height="35" alt="...">
-                      <i class="busy dot"></i>
-                      <div class="media-body">
-                        <h5 class="media-heading">Sarah Smith</h5>
-                        <div class="media-heading-sub">Anaesthetics</div>
-                      </div>
-                    </li>
-                    <li class="media"><img class="media-object" src="../assets/img/prof/prof7.jpg"
-                        width="35" height="35" alt="...">
-                      <i class="online dot"></i>
-                      <div class="media-body">
-                        <h5 class="media-heading">Vlad Cardella</h5>
-                        <div class="media-heading-sub">Cardiologist</div>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="chat-header">
-                    <h5 class="list-heading">Offline</h5>
-                  </div>
-                  <ul class="media-list list-items">
-                    <li class="media">
-                      <div class="media-status">
-                        <span class="badge badge-warning">4</span>
-                      </div> <img class="media-object" src="../assets/img/prof/prof6.jpg"
-                        width="35" height="35" alt="...">
-                      <i class="offline dot"></i>
-                      <div class="media-body">
-                        <h5 class="media-heading">Jennifer Maklen</h5>
-                        <div class="media-heading-sub">Nurse</div>
-                        <div class="media-heading-small">Last seen 01:20 AM</div>
-                      </div>
-                    </li>
-                    <li class="media"><img class="media-object" src="../assets/img/prof/prof8.jpg"
-                        width="35" height="35" alt="...">
-                      <i class="offline dot"></i>
-                      <div class="media-body">
-                        <h5 class="media-heading">Lina Smith</h5>
-                        <div class="media-heading-sub">Ortho Surgeon</div>
-                        <div class="media-heading-small">Last seen 11:14 PM</div>
-                      </div>
-                    </li>
-                    <li class="media">
-                      <div class="media-status">
-                        <span class="badge badge-success">9</span>
-                      </div> <img class="media-object" src="../assets/img/prof/prof9.jpg"
-                        width="35" height="35" alt="...">
-                      <i class="offline dot"></i>
-                      <div class="media-body">
-                        <h5 class="media-heading">Jeff Adam</h5>
-                        <div class="media-heading-sub">Compounder</div>
-                        <div class="media-heading-small">Last seen 3:31 PM</div>
-                      </div>
-                    </li>
-                    <li class="media"><img class="media-object" src="../assets/img/prof/prof10.jpg"
-                        width="35" height="35" alt="...">
-                      <i class="offline dot"></i>
-                      <div class="media-body">
-                        <h5 class="media-heading">Anjelina Cardella</h5>
-                        <div class="media-heading-sub">Physiotherapist</div>
-                        <div class="media-heading-small">Last seen 7:45 PM</div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- End Doctor Chat -->
+            
             <!-- Start Setting Panel -->
-            <div class="tab-pane chat-sidebar-settings" role="tabpanel" id="quick_sidebar_tab_3">
+            <div class="tab-pane chat-sidebar-settings in active show" role="tabpanel" id="quick_sidebar_tab_3">
               <div class="chat-sidebar-settings-list slimscroll-style">
                 <div class="chat-header">
                   <h5 class="list-heading">Layout Settings</h5>
@@ -171,7 +51,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="chat-header">
+                  <!-- <div class="chat-header">
                     <h5 class="list-heading">Account Settings</h5>
                   </div>
                   <div class="settings-list">
@@ -223,7 +103,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                   <div class="chat-header">
                     <h5 class="list-heading">General Settings</h5>
                   </div>
@@ -286,7 +166,6 @@
     <!-- end footer -->
   </div>
   
-  
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
@@ -301,7 +180,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" id='confirm' onclick="">Continue</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="confirm_modal">Close</button>
       </div>
       </div>
     </div>
@@ -316,7 +195,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" id='submit' onclick="$('#uni_modal form').submit()">Save</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="uni_modal">Cancel</button>
       </div>
       </div>
     </div>

@@ -17,7 +17,7 @@
 	<!-- bootstrap -->
 	<link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<!-- style -->
-	<link rel="stylesheet" href="../assets/css/pages/extra_pages.css">
+        <link rel="stylesheet" href="../assets/css/pages/extra_pages.css?t=<?php echo time(); ?>">
 	<!-- favicon -->
 	<link rel="shortcut icon" href="../assets/img/favicon.ico" />
 	<?php 
@@ -33,7 +33,7 @@
 			<div class="wrap-login100">
 				<form id="login-form">
 					<span class="login100-form-logo">
-						<img alt="" src="../assets/img/logo-2.png">
+						<img alt="" src="../assets/img/documents-158461_640.png">
 					</span>
 					<span class="login100-form-title p-b-34 p-t-27">
 						Log in
@@ -57,7 +57,7 @@
 							Login
 						</button>
 					</div>
-					<div class="text-center p-t-30">
+					<div class="text-center p-t-30" style="display: none;">
 						<a class="txt1" href="forgot_password.html">
 							Forgot Password?
 						</a>

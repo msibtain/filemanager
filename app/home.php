@@ -95,7 +95,7 @@ a.custom-menu-list span.icon{
 										$icon ='fa-file-archive';
 
 								?>
-                                        <div class="col-lg-4 filecol <?php echo $s; ?>">
+                                        <div class="col-lg-2 filecol <?php echo $s; ?>">
                                             <div class="card col-md-12">
                                 <div class="card-body">
                                     <span class="fileimage"><i class="fa fa-3x <?php echo $icon ?>"></i></span> 
@@ -108,7 +108,7 @@ a.custom-menu-list span.icon{
                                             </div>
                                             <?php 
                                             
-                                            if ($s % 3 == 0)
+                                            if ($s % 6 == 0)
                                             {
                                                 echo '</div><div class="row">';
                                             }
