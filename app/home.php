@@ -105,6 +105,15 @@ a.custom-menu-list span.icon{
                                                 <?php echo $name ?></large>
                                             <br>
                                             <a href="javascript:void(0)" class="custom-menu-list file-option download" data-id = '<?php echo $row['id'] ?>'><span><i class="fa fa-download"></i> </span>Download</a>
+                                            <?php
+                                
+                                if ($_SESSION['login_type'] === "1")
+                                {
+                                    ?>
+                                    <a href="javascript:void(0)" class="custom-menu-list file-option delete" data-id = '<?php echo $row['id'] ?>'><span><i class="fa fa-trash"></i> </span> Delete</a> 
+                                    <?php
+                                }
+                                ?>
                                             </div>
                                             <?php 
                                             
@@ -219,4 +228,26 @@ a.custom-menu-list span.icon{
 		e.preventDefault()
 		window.open('download.php?id='+$(this).attr('data-id'))
 	})
+        
+        $(".delete").click(function(e){
+		e.preventDefault()
+		_conf("Are you sure to delete this file?",'delete_file',[$(this).attr('data-id')])
+	})
+        
+        function delete_file($id){
+		start_load();
+		$.ajax({
+			url:'ajax.php?action=delete_file',
+			method:'POST',
+			data:{id:$id},
+			success:function(resp){
+				if(resp == 1){
+					alert_toast("File successfully deleted.",'success')
+						setTimeout(function(){
+							location.reload()
+						},1500)
+				}
+			}
+		})
+	}
 </script>

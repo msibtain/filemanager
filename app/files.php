@@ -190,6 +190,15 @@ div b{
                                     <?php echo $name ?></large>
                                 <br>
                                 <a href="javascript:void(0)" class="custom-menu-list file-option download" data-id = '<?php echo $row['id'] ?>'><span><i class="fa fa-download"></i> </span>Download</a>
+                                <?php
+                                
+                                if ($_SESSION['login_type'] === "1")
+                                {
+                                    ?>
+                                    <a href="javascript:void(0)" class="custom-menu-list file-option delete" data-id = '<?php echo $row['id'] ?>'><span><i class="fa fa-trash"></i> </span> Delete</a> 
+                                    <?php
+                                }
+                                ?>
                                 </div>
                                 <?php 
                                 
