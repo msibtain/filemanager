@@ -1,3 +1,10 @@
+<?php
+if ($_SESSION['login_type'] != 1)
+{
+    es_redirect('login.php');
+    exit();
+}
+?>
 <div class="state-overview">
 	
 	<div class="row">

@@ -32,11 +32,18 @@
 							<span class="title">Files</span>
 						</a>
 					</li>
+                                        <?php
+                                        if ($_SESSION['login_type'] == 1)
+                                        {
+                                        ?>
 					<li class="nav-users">
 						<a href="index.php?page=users" class="nav-link nav-toggle"><i class="fa fa-users"></i>
 							<span class="title">Users</span>
 						</a>
 					</li>
+                                        <?php
+                                        }
+                                        ?>
 				</ul>
 			</div>
 		</div>
