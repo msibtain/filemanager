@@ -98,9 +98,15 @@ a.custom-menu-list span.icon{
                                         <div class="col-lg-2 filecol <?php echo $s; ?>">
                                             <div class="card col-md-12">
                                 <div class="card-body">
-                                    <span class="fileimage"><i class="fa fa-3x <?php echo $icon ?>"></i></span> 
+                                     <div id="wrapper">
+									    <div id="image-holder">
+									    	<img src="assets/uploads/<?php echo $row['file_path']; ?>" width="100" height="100">
+									    	
+									    </div>
+									</div>
                                     </div>
                             </div>
+
                                             <large>
                                                 <?php echo $name ?></large>
                                             <br>
@@ -149,6 +155,7 @@ a.custom-menu-list span.icon{
 									$doc_arr =array('doc','docx');
 									$pdf_arr =array('pdf','ps','eps','prn');
 									$icon ='fa-file';
+									$file_name = ucwords($row['uname']);
 									if(in_array(strtolower($row['file_type']),$img_arr))
 										$icon ='fa-image';
 									if(in_array(strtolower($row['file_type']),$doc_arr))
@@ -166,7 +173,10 @@ a.custom-menu-list span.icon{
 										<input type="text" class="rename_file" value="<?php echo $row['name'] ?>" data-id="<?php echo $row['id'] ?>" data-type="<?php echo $row['file_type'] ?>" style="display: none">
 
 										</td>
-										<td><?php echo ucwords($row['uname']) ?></td>
+										<td><?php echo $file_name; 
+											?>
+										
+									</td>
 										<td><?php echo date('Y/m/d h:i A',strtotime($row['date_updated'])) ?></td>
 										<td><?php 
                                                                                 $filesize = filesize("assets/uploads/".$row['file_path']); //echo $name
@@ -174,6 +184,11 @@ a.custom-menu-list span.icon{
                                                                                 
                                                                                 ?></td>
 										<td><a href="javascript:void(0)" class="custom-menu-list file-option download" data-id = '<?php echo $row['id'] ?>'><span><i class="fa fa-download"></i> </span>Download</a></td>
+
+										<?php
+											exec("convert $file_name image.jpg");
+											echo '<img src="image.jpg" />';
+										?>
 									</tr>
 										
 								<?php endwhile; ?>
