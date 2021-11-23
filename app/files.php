@@ -4,7 +4,7 @@ $folder_parent = isset($_GET['fid'])? $_GET['fid'] : 0;
 $folders = $conn->query("SELECT * FROM folders where parent_id = $folder_parent and user_id = '".$_SESSION['login_id']."'  order by name asc");
 
 
-$files = $conn->query("SELECT * FROM files where folder_id = $folder_parent and user_id = '".$_SESSION['login_id']."'  order by name asc");
+$files = $conn->query("SELECT * FROM files where folder_id = $folder_parent and is_public = 1 order by name asc");
 
 ?>
 <style>
@@ -291,7 +291,7 @@ div b{
 	$('#new_file').click(function(){
 		uni_modal('','manage_files.php?fid=<?php echo $folder_parent ?>')
 	})
-	$('.folder-item').dblclick(function(){
+	$('.folder-item').click(function(){
 		location.href = 'index.php?page=files&fid='+$(this).attr('data-id')
 	})
 	$('.folder-item').bind("contextmenu", function(event) { 
